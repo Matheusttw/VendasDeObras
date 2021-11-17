@@ -7,7 +7,7 @@ const cs = (el)=>document.querySelectorAll(el);
 
 // Listagem das pizzas
 obrasJson.map((item, index)=>{
-    let obraItem = c('.models .obra-item').cloneNode(true);
+    let obraItem = c('.models .obra-item').cloneNode(true);//
     
     obraItem.setAttribute('data-key', index);
     obraItem.querySelector('.obra-item--img img').src = item.img;

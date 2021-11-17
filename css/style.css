@@ -9,30 +9,65 @@ body {
     min-height:100vh;
 }
 .models {
-    display:none;
+    display: flex;
 }
 
 header {
     position: fixed;
-    left:0;
+    left:0px;
     top:0;
-    right:0;
-    height:60px;
+    right:0px;
+    height:98px;
     background-color:#4E4900;
-    display:none;
+    display:flex;
     justify-content: flex-end;
     align-items: center;
+    
 }
+.menu {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	
+}
+.menu ul,
+.menu li {
+	list-style: none;
+}
+.menu ul{
+	display: flex;
+}
+.menu li a {
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	font-weight: 600;
+	text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	
+}
+.menu li a:hover, 
+.menu .active a {
+	border-bottom: solid 3px #FFF382;
+	color:#FFF382;
+    
+}
+
+
 .menu-openner {
     margin-right: 15px;
-    font-size: 26px;
+    font-size: 22px;
     background-color: #A99B2C;
-    padding: 5px 20px;
-    border-radius: 5px;
+    padding: 15px 15px;
+    border-radius: 15px;
 }
 .menu-openner span {
     margin-right:10px;
     color: white;
+    
 }
 .menu-closer {
     width:32px;
@@ -51,7 +86,7 @@ aside.show {
     width:30vw;
 }
 .cart--area {
-    padding:20px;
+    padding:70px;
 }
 main {
     flex:1;
@@ -60,14 +95,15 @@ main {
 h1 {
     font-family: 'Road Rage', cursive;
     font-size: 70px;
-    margin-left:100px ;
+    margin-left:50px ;
+    margin-top: 120px;
     
     
 }
 .obra-area {
     display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top:100px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top:80px;
 }
 .obra-item {
     text-align: center;
@@ -81,16 +117,12 @@ h1 {
     align-items:center;
     text-decoration: none;
 }
-.obra-item--img {
-    width:200px;
-    height:200px;
-    background-color:#EEE;
-    border-radius:100px;
-    box-shadow:0px 10px 50px rgba(0, 0, 0, 0.2);
-}
+
+
 .obra-item--img img {
     width:100%;
     height:auto;
+    
 }
 .obra-item--add {
     width:50px;
@@ -272,11 +304,7 @@ h1 {
     display:flex;
     align-items:center;
     margin:10px 0;
-}
-.cart--item img {
-    width:40px;
-    height:40px;
-    margin-right:20px;
+
 }
 .cart--item-nome {
     flex:1;
